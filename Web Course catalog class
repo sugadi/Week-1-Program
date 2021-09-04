@@ -1,0 +1,20 @@
+public class A08
+{
+      public static void main ( String[ ] args )
+      {
+operations. 
+//List < Course > courseList =  new ArrayList < > () ;
+MasterCourseCatalog mcc = new MasterCourseCatalog();
+BackupCourseCatalog bcc = new BackupCourseCatalog( );
+// Tell the master catalog that the backup exists.
+mcc.addCourse( new Course( "CSC", "335", "O-O Pgm & Design", 3 ) ) ;
+mcc.addCourse( new Course( "CSC", "460", "DB Design", 3 ) ) ;
+mcc.addCourse( new Course( "CSC", "210", "Software Dev", 3 ) ) ;
+mcc.addCourse( new Course( "CSC", "120", "Programming 2", 3 ) ) ;
+mcc.addCourse( new Course( "CSC", "110", "Programming 1", 3 ) ) ;
+// needed to give fakeCourse a name so it could be used in two
+                Course fakeCourse = ( new Course( "CSC", "666", "Diabolical
+    Programming", 6 ) ) ;
+                mcc.addCourse( fakeCourse ) ;
+                mcc.removeCourse( fakeCourse );
+
